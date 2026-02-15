@@ -7,9 +7,9 @@ faqItems.forEach((item) => {
   questionBtn.addEventListener("click", () => {
     const isExpanded = item.classList.contains("faq__item--expanded");
 
-    faqItems.forEach((el) => {
-      el.classList.remove("faq__item--expanded");
-      el.querySelector(".faq__answer").classList.add("faq__answer--hidden");
+    faqItems.forEach((faq) => {
+      faq.classList.remove("faq__item--expanded");
+      faq.querySelector(".faq__answer").classList.add("faq__answer--hidden");
     });
 
     if (!isExpanded) {
